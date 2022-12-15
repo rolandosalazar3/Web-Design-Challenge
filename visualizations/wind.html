@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Add a title here -->
-
+    <title>Wind</title>
     <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen">
 
@@ -18,11 +18,72 @@
 
   <body>
     <!-- Start of navbar -->
+    <div class="navigation">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbardropdown" aria-controls="navbardropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbardropdown">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="Toggle nav-link dropdown" href="#" id="navbarDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownLink">
+                <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
+                <a class="dropdown-item" href="visualizations/temperature.html">Temperature</a>
+                <a class="dropdown-item" href="visualizations/wind.html">Wind</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     <!-- End of navbar -->
 
     <!-- Start of container -->
-
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 col-md-12">
+          <div class="box" style="padding-bottom: 5px;">
+            <h3 class="title">Wind Speed</h3>
+            <hr>
+            <img src="assets/images/Fig4.png" alt="wind speed">
+            <p>
+              The data for wind speed shows that wind speed does not have a significant correlation with latitude. Although the highest wind speeds recorded are at the highest latitudes, there is no correlation. 
+            </p>         
+          </div>
+        </div>
           <!-- Start of Visualizations imageNav Area -->
+          <div class="col-md-7">
+            <h3>Visualizations</h3>
+                <hr>
+                <div class="row">
+                    <div class="col-3 col-md-6">
+                        <a href="visualizations/temp.html"><img src="assets/images/Fig1.png" width="100%"  alt="temperature">
+                        </a> 
+                    </div>
+                    <div class="col-3 col-md-6">
+                        <a href="visualizations/humidity.html"><img src="assets/images/Fig2.png" width="100%" alt="humidity"></a>
+                    </div>
+               
+                    <div class="col-3 col-md-6">
+                        <a href="visualizations/cloudiness.html"><img src="assets/images/Fig3.png" width="100%"  alt="cloudiness"></a>
+                    </div>
+
+                    <div class="col-3 col-md-6">
+                        <a href="visualizations/wind.html"><img src="assets/images/Fig4.png"width="100%"  alt="wind"></a>
+                    </div>
+                </div>
+            </div>
           <!-- End of the Visualizations imageNav Area -->
 
     <!-- End of container -->
